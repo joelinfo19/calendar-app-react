@@ -1,0 +1,16 @@
+.form-input{
+    display: flex;
+
+    flex-direction: column;
+}
+
+.input-center{
+    display: flex;
+
+    align-self: center;
+}
+.input-center-in{
+    display: flex;
+
+    align-self: center;
+}
