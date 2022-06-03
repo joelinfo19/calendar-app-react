@@ -1,7 +1,27 @@
-.form-input{
+.form-input-flex{
     display: flex;
+    width: 500px;
+    height: 500px;
+    border: 1px solid lightsalmon;
+    margin: 50px auto auto;
+    box-shadow: 5px 5px lightgreen;
 
+    /*flex-direction: column ;*/
+    /*!*justify-content: center;*!*/
+    /*align-items: center;*/
+
+    /*height: 500px;*/
+}
+.flex-form{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background-color: navajowhite;
+    /*align-items: center;*/
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*border: 1px solid red;*/
 }
 
 .input-center{
@@ -14,6 +34,38 @@
 
     align-self: center;
 }
+.box{
+    border-radius: 10px;
+    box-shadow: 2px 2px #fde54d;
+    color:grey;
+    outline: none;
+    background-color: lightgreen;
+    padding: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.text{
+    text-decoration: none;
+    font-family: "3ds Light";
+    margin: 5% 10% 5% 10%;
+
+}
+.login{
+    border-radius: 10px;
+    /*cursor:pointer;*/
+    background-color: #eca7a7;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.login:hover{
+    background-color: grey;
+
+}
+/*.form-border{*/
+/*    border: 1px solid red;*/
+/*}*/
 
 /*when is a flex-direction:row we need to arrange in a group in the mayor group but
 if is column we can arrange individuals items*/
