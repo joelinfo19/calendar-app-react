@@ -1,71 +1,128 @@
-.form-input-flex{
-    display: flex;
-    width: 500px;
-    height: 500px;
-    border: 1px solid lightsalmon;
-    margin: 50px auto auto;
-    box-shadow: 5px 5px lightgreen;
-
-    /*flex-direction: column ;*/
-    /*!*justify-content: center;*!*/
-    /*align-items: center;*/
-
-    /*height: 500px;*/
-}
-.flex-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    background-color: navajowhite;
-    /*align-items: center;*/
-    /*width: 500px;*/
-    /*height: 500px;*/
-    /*border: 1px solid red;*/
-}
-
-.input-center{
-    display: flex;
-
-    align-self: center;
-}
-.input-center-in{
-    display: flex;
-
-    align-self: center;
-}
-.box{
-    border-radius: 10px;
-    box-shadow: 2px 2px #fde54d;
-    color:grey;
-    outline: none;
-    background-color: lightgreen;
-    padding: 2px;
-    margin-left: 10%;
-    margin-right: 10%;
-
-}
-.text{
-    text-decoration: none;
-    font-family: "3ds Light";
-    margin: 5% 10% 5% 10%;
-
-}
-.login{
-    border-radius: 10px;
-    /*cursor:pointer;*/
-    background-color: #eca7a7;
-    margin-top: 10%;
-    margin-right: 20%;
-    margin-left: 20%;
-}
-.login:hover{
-    background-color: grey;
-
-}
-/*.form-border{*/
-/*    border: 1px solid red;*/
+/* MY LOGIN FLEX*/
+/*.container-login{*/
+/*    display:flex;*/
 /*}*/
+/*.form-input-flex{*/
+/*    display: flex;*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    border: 1px solid lightsalmon;*/
+/*    margin: 50px auto auto;*/
+/*    box-shadow: 5px 5px #90ee90;*/
+
+/*    !*flex-direction: column ;*!*/
+/*    !*!*justify-content: center;*!*!*/
+/*    !*align-items: center;*!*/
+
+/*    !*height: 500px;*!*/
+/*}*/
+/*.flex-form{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    width: 50%;*/
+/*    background-color: navajowhite;*/
+/*    !*align-items: center;*!*/
+/*    !*width: 500px;*!*/
+/*    !*height: 500px;*!*/
+/*    !*border: 1px solid red;*!*/
+/*}*/
+
+/*.input-center{*/
+/*    display: flex;*/
+
+/*    align-self: center;*/
+/*}*/
+/*.input-center-in{*/
+/*    display: flex;*/
+
+/*    align-self: center;*/
+/*}*/
+/*.box{*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 2px 2px #fde54d;*/
+/*    color:grey;*/
+/*    outline: none;*/
+/*    background-color: lightgreen;*/
+/*    padding: 2px;*/
+/*    margin-left: 10%;*/
+/*    margin-right: 10%;*/
+
+/*}*/
+/*.text{*/
+/*    text-decoration: none;*/
+/*    font-family: "3ds Light";*/
+/*    margin: 5% 10% 5% 10%;*/
+
+/*}*/
+/*.login{*/
+/*    border-radius: 10px;*/
+/*    !*cursor:pointer;*!*/
+/*    background-color: #eca7a7;*/
+/*    margin-top: 10%;*/
+/*    margin-right: 20%;*/
+/*    margin-left: 20%;*/
+/*}*/
+/*.login:hover{*/
+/*    background-color: grey;*/
+
+/*}*/
+/*!*.form-border{*!*/
+/*!*    border: 1px solid red;*!*/
+/*!*}*!*/
 
 /*when is a flex-direction:row we need to arrange in a group in the mayor group but
 if is column we can arrange individuals items*/
+/*END OF MY LOGIN*/
+/*LOGIN COURSE*/
+.login-container{
+    margin-top: 15%;
+}
+.login-form-1{
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-form-2{
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    background: #0062cc;
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-2 .btnSubmit{
+    background-color: #fff;
+    color: #0062cc;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
