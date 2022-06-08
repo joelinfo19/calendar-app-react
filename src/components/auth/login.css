@@ -76,7 +76,8 @@ if is column we can arrange individuals items*/
 /*END OF MY LOGIN*/
 /*LOGIN COURSE*/
 .login-container{
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .login-form-1{
     border-radius: 5px;
