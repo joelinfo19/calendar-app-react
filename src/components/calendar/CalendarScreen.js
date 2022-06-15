@@ -12,7 +12,7 @@ const localizer = momentLocalizer(moment) // or globalizeLocalizer
 moment.locale('es')
 
 const events=[{
-    title:"cumpleaniossssssssss",
+    title:"cumpleanios",
     start: moment().toDate(),
     end: moment().add(2,"hours").toDate(),
     bgcolor:'#fafafa',
