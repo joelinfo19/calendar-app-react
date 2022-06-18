@@ -1,7 +1,7 @@
 import React, {useState} from "react"
+//React-modal library
 import Modal from 'react-modal';
-
-
+//Styles for body
 const customStyles = {
     content: {
         top: '50%',
