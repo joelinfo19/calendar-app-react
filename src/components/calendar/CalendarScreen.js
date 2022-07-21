@@ -10,12 +10,14 @@ import {CalendarEvent} from "./CalendarEvent";
 import {CalendarModal} from "./CalendarModal";
 import {useDispatch} from "react-redux";
 import {uiOpenModal} from "../../actions/ui";
+import {eventSetActive} from "../../actions/events";
+import {AddNewFab} from "../ui/AddNewFab";
 
 const localizer = momentLocalizer(moment) // or globalizeLocalizer
 moment.locale('es')
 
 const events=[{
-    title:"cumpleanios",
+    title:"cumpleaniosMNOOO",
     start: moment().toDate(),
     end: moment().add(2,"hours").toDate(),
     bgcolor:'#fafafa',
@@ -36,7 +38,8 @@ export const CalendarScreen=()=>{
         dispatch(uiOpenModal())
     }
     const onSelectEvent=(e)=>{
-        // console.log(e)
+        dispatch(eventSetActive(e))
+        console.log(e)
 
     }
     const onViewChange=(e)=>{
@@ -72,8 +75,9 @@ export const CalendarScreen=()=>{
                     event:CalendarEvent
                 }}
             />
-
+            <AddNewFab/>
             <CalendarModal/>
+
         </div>
     )
 }
