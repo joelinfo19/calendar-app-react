@@ -4,12 +4,12 @@ import {useDispatch} from "react-redux";
 export const AddNewFab=()=>{
 
     const dispatch=useDispatch()
-    const openModal=()=>{
+    const handleClickNew=()=>{
         dispatch(uiOpenModal())
     }
     return(
         <button
-            onClick={openModal}
+            onClick={handleClickNew}
             className="btn btn-primary fab"
         >
             <i className="fas fa-plus"></i>
