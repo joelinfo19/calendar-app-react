@@ -3,6 +3,7 @@
 import {axiosWithoutToken, axiosWithToken} from "../helpers/axios";
 import {types} from "../types/types";
 import Swal from "sweetalert2";
+import {eventCleanedLogout} from "./events";
 
 export const startLogin=(email, password)=>{
     // const dispatch=useDispatch()
@@ -97,6 +98,8 @@ const login=(user)=>({
 export const startLogout=()=>{
     return (dispatch)=>{
         localStorage.clear()
+        dispatch(eventCleanedLogout())
+
         dispatch(logout())
     }
 }

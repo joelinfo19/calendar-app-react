@@ -44,7 +44,7 @@ export const eventClearActiveEvent=()=>({
 export const startEventUpdated=(event)=>{
     console.log(event)
 
-    return async (dispatch,getState)=>{
+    return async (dispatch)=>{
         try{
             const resp=await axiosWithToken(`events/${event._id}`,event,'PUT')
             const {data}=resp
@@ -65,8 +65,27 @@ const eventUpdated=(event)=>( {
     type:types.eventUpdated,
     payload:event,
 })
+export const startEventDeleted=()=>{
+    return async (dispatch,getState)=>{
+        const {_id}=getState().calendar.activeEvent
+        // console.log(_id)
+        try {
 
-export const eventDeleted=()=>({
+            const resp=await axiosWithToken(`events/${_id}`,{},'DELETE')
+            const {data}=resp
+            if(data.ok){
+                dispatch(eventDeleted())
+            }
+            // else{
+            //     console.log(data)
+            // }
+        }catch (e) {
+            // console.log(e.response.data)
+            await Swal.fire('Error',e.response.data.msg,'error')
+        }
+    }
+}
+ const eventDeleted=()=>({
     type:types.eventDeleted,
 })
 export const eventStartLoading=()=>{
@@ -92,4 +111,7 @@ const eventLoaded=(events)=>({
     }
 
 )
+export const eventCleanedLogout=()=>({
+    type:types.eventCleanedLogout
+})
 
